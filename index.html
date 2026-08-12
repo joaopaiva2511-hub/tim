@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+  <meta name="theme-color" content="#004691">
+  <meta name="description" content="Protótipo visual independente inspirado na experiência digital da TIM.">
+  <title>Protótipo TIM</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="prototype-strip">PROTÓTIPO VISUAL INDEPENDENTE · NÃO É O SITE OFICIAL DA TIM</div>
+
+  <header class="site-header">
+    <div class="utility-bar">
+      <div class="shell utility-inner">
+        <nav aria-label="Perfis"><a class="active" href="#home">Para você</a><a href="#empresas">TIM Empresas</a></nav>
+        <div class="utility-actions"><button>⌖ Amazonas</button><button>♿ Acessibilidade</button></div>
+      </div>
+    </div>
+    <div class="main-nav">
+      <div class="shell nav-inner">
+        <a class="logo-link" href="#home" aria-label="Início">
+          <span class="tim-logo"><span class="tim-rails"><i></i><i></i><i></i></span><strong>TIM</strong><span class="tim-rails right"><i></i><i></i><i></i></span></span>
+        </a>
+        <nav class="nav-links" id="main-menu" aria-label="Navegação principal">
+          <a href="#planos">Planos</a><a href="#celular">Celular</a><a href="#internet">Internet</a><a href="#servicos">Serviços</a><a href="#atendimento">Atendimento</a>
+        </nav>
+        <div class="nav-actions"><button class="search-button" aria-label="Buscar">⌕</button><button class="account-button" data-account>● Meu TIM</button><button class="mobile-location">⌖ AM</button><button class="menu-button" id="menu-button" aria-label="Abrir menu">☰</button></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+      <div class="shell hero-inner">
+        <div class="hero-copy">
+          <span class="eyebrow" id="hero-eyebrow">TIM CONTROLE</span>
+          <h1 id="hero-title">Seu pai com mais internet, pagando menos</h1>
+          <p id="hero-copy">46GB para navegar, WhatsApp ilimitado e ligações para qualquer operadora.</p>
+          <div class="hero-actions"><button class="button primary" data-plan="TIM Controle">Conferir planos</button><button class="button ghost" data-plan="TIM Controle">Contratar</button></div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="signal signal-one"></div><div class="signal signal-two"></div>
+          <div class="phone"><div class="phone-speaker"></div><div class="phone-screen"><span class="phone-brand">TIM</span><span>Você pode tudo</span><div class="five-g">5G</div></div></div>
+          <div class="price-card"><small>A partir de</small><div><sup>R$</sup><b id="hero-price">59,99</b></div><span id="hero-note">/mês</span></div>
+          <div class="benefit-card">✓ Apps inclusos<br>✓ Internet acumulada</div>
+        </div>
+      </div>
+      <button class="hero-arrow left" id="prev-slide" aria-label="Oferta anterior">‹</button><button class="hero-arrow right" id="next-slide" aria-label="Próxima oferta">›</button>
+      <div class="hero-dots" id="hero-dots" aria-label="Selecionar oferta"></div>
+    </section>
+
+    <section class="quick-zone shell" id="servicos">
+      <div class="quick-card">
+        <div><span class="section-kicker">Acesso rápido</span><h2>O que você precisa?</h2></div>
+        <div class="quick-links"><button data-account><span>▤</span><b>2ª via</b></button><button data-plan="Recarga"><span>↻</span><b>Recarga</b></button><a href="#planos"><span>◫</span><b>Planos</b></a><a href="#atendimento"><span>◎</span><b>Suporte</b></a></div>
+      </div>
+    </section>
+
+    <section class="section shell" id="planos">
+      <div class="section-heading"><div><span class="section-kicker">Escolha o seu</span><h2>Planos para todos os momentos</h2></div><a href="#planos">Ver todos os planos →</a></div>
+      <div class="plan-grid">
+        <article class="plan-card red"><span class="plan-tag">Mais escolhido</span><h3>TIM Controle</h3><div class="data-amount">46GB</div><p>WhatsApp e ligações ilimitadas</p><div class="plan-price"><span>R$</span><strong>64,99</strong><small>/mês</small></div><button class="button plan-button" data-plan="TIM Controle">Conhecer plano</button></article>
+        <article class="plan-card blue"><span class="plan-tag">Internet em casa</span><h3>TIM Ultrafibra</h3><div class="data-amount">800 Mega</div><p>Wi-Fi 6 e instalação grátis</p><div class="plan-price"><span>R$</span><strong>129,99</strong><small>/mês</small></div><button class="button plan-button" data-plan="TIM Ultrafibra">Conhecer plano</button></article>
+        <article class="plan-card navy"><span class="plan-tag">Para a família</span><h3>TIM Black Família</h3><div class="data-amount">170GB</div><p>Até 6 linhas e Deezer incluso</p><div class="plan-price"><span>R$</span><strong>304,99</strong><small>/mês</small></div><button class="button plan-button" data-plan="TIM Black Família">Conhecer plano</button></article>
+      </div>
+    </section>
+
+    <section class="interest-section" id="celular">
+      <div class="shell"><div class="section-heading light-heading"><div><span class="section-kicker">Feito para você</span><h2>Confira assuntos que podem interessar</h2></div></div>
+        <div class="interest-grid">
+          <article class="interest-main"><img src="https://timbrasil.widen.net/content/a8drjqe6o0/webp/m30-dia-dos-pais.webp" alt="Smartphones em promoção"><div class="interest-overlay"><span>Dia dos Pais TIM</span><h3>Um Galaxy novo e 1 ano de seguro celular</h3><button class="button white" data-plan="Smartphones">Ver ofertas</button></div></article>
+          <article class="interest-small"><span class="mini-label">TIM Controle</span><h3>Até <b>46GB</b> por R$64,99/mês</h3><p>Escolha uma assinatura digital para curtir.</p><button data-plan="TIM Controle">Conferir oferta →</button></article>
+          <article class="interest-small app-card"><img src="https://timbrasil.widen.net/content/khtv7ighy5/webp/m30-meu-TIM-app.webp" alt="Aplicativo Meu TIM"><div><span class="mini-label">Novo app</span><h3>Tudo do seu plano em um toque</h3><button data-account>Acessar Meu TIM →</button></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell" id="atendimento">
+      <div class="section-heading"><div><span class="section-kicker">Resolva online</span><h2>Autoatendimento TIM</h2><p>Serviços rápidos para quem já é cliente.</p></div></div>
+      <div class="service-grid">
+        <button data-account><span class="service-icon">▣</span><span><b>Meu TIM</b><small>Consumo, recarga e saldo</small></span><i>›</i></button>
+        <button><span class="service-icon">▤</span><span><b>Fatura</b><small>2ª via e código de barras</small></span><i>›</i></button>
+        <button data-plan="Recarga"><span class="service-icon">↻</span><span><b>Recarga</b><small>Recarregue agora</small></span><i>›</i></button>
+        <button data-plan="Portabilidade"><span class="service-icon">⇄</span><span><b>Portabilidade</b><small>Traga seu número</small></span><i>›</i></button>
+        <button><span class="service-icon">◉</span><span><b>Troca de chip</b><small>Chip físico ou eSIM</small></span><i>›</i></button>
+        <button><span class="service-icon">+</span><span><b>Mais serviços</b><small>Veja todas as opções</small></span><i>›</i></button>
+      </div>
+    </section>
+
+    <section class="app-promo" id="internet"><div class="shell app-inner"><div class="app-copy"><span class="section-kicker">NOVO APP MEU TIM</span><h2>Mais rápido, moderno e intuitivo</h2><p>Consulte seu consumo, pague faturas, faça recargas e encontre benefícios em um só lugar.</p><div class="store-row"><button>▶ Google Play</button><button>● App Store</button></div></div><div class="app-phone" aria-hidden="true"><span class="phone-brand">TIM</span><div class="balance-card"><small>Seu consumo</small><strong>32,4 GB</strong><span>de 46 GB</span><i></i></div><div class="app-shortcuts"><span>▤<b>Fatura</b></span><span>↻<b>Recarga</b></span><span>✦<b>Benefícios</b></span></div></div></div></section>
+
+    <section class="section shell faq-section"><div class="section-heading"><div><span class="section-kicker">Tire suas dúvidas</span><h2>Perguntas frequentes</h2></div></div><div class="faq-list">
+      <article class="faq-item open"><button><span>Como contratar um plano TIM?</span><i>−</i></button><p>Escolha uma oferta e clique em “Conhecer plano”. Neste protótipo, o botão abre uma simulação.</p></article>
+      <article class="faq-item"><button><span>Como acessar a segunda via da fatura?</span><i>+</i></button><p>Use o atalho “2ª via” ou o botão Meu TIM no topo da página.</p></article>
+      <article class="faq-item"><button><span>Posso trazer meu número para a TIM?</span><i>+</i></button><p>Sim. A portabilidade mantém seu número e pode ser solicitada durante a contratação.</p></article>
+    </div></section>
+  </main>
+
+  <footer><div class="shell footer-top"><span class="footer-logo">TIM</span><div class="footer-social"><span>Siga a TIM</span><a href="#">◎</a><a href="#">▶</a><a href="#">f</a><a href="#">𝕏</a></div></div><div class="shell footer-grid"><div><h3>Para você</h3><a href="#planos">Planos</a><a href="#celular">Celulares</a><a href="#internet">Internet residencial</a><a href="#servicos">Recarga</a></div><div><h3>Atendimento</h3><a href="#atendimento">Meu TIM</a><a href="#atendimento">Fatura</a><a href="#atendimento">Suporte técnico</a></div><div><h3>Sobre a TIM</h3><a href="#">A empresa</a><a href="#">Carreiras</a><a href="#">Sustentabilidade</a></div><div><h3>Fale com a gente</h3><p>Do seu TIM: <b>*144</b></p><p>De qualquer telefone: <b>1056</b></p></div></div><div class="shell footer-bottom"><span>Protótipo demonstrativo sem vínculo com a TIM S.A.</span><nav><a href="#">Privacidade</a><a href="#">Termos de uso</a></nav></div></footer>
+
+  <nav class="mobile-bottom-nav" aria-label="Navegação móvel"><a class="active" href="#home"><span>⌂</span><b>Início</b></a><a href="#planos"><span>▣</span><b>Planos</b></a><button data-plan="Recarga"><span>↻</span><b>Recarga</b></button><a href="#atendimento"><span>◉</span><b>Suporte</b></a><button data-account><span>●</span><b>Meu TIM</b></button></nav>
+  <button class="floating-chat" data-plan="Atendimento">◉</button>
+
+  <div class="cookie-banner" id="cookie-banner"><div><b>Sua privacidade importa</b><p>Este protótipo usa apenas recursos essenciais para a demonstração.</p></div><button class="cookie-link" id="cookie-settings">Configurar</button><button class="button primary" id="cookie-accept">Entendi</button></div>
+
+  <div class="modal-backdrop" id="plan-modal" hidden><section class="modal" role="dialog" aria-modal="true"><button class="modal-close" data-close>×</button><span class="section-kicker">SIMULAÇÃO</span><h2 id="modal-plan-title">Plano</h2><p>Esta é uma demonstração. Em uma versão comercial, a próxima etapa confirmaria sua região e apresentaria as ofertas disponíveis.</p><label>DDD para simular ofertas<input placeholder="92" maxlength="2" inputmode="numeric"></label><button class="button primary wide" data-close>Continuar demonstração</button></section></div>
+  <div class="modal-backdrop" id="account-modal" hidden><section class="modal account-modal" role="dialog" aria-modal="true"><button class="modal-close" data-close>×</button><span class="phone-brand">TIM</span><h2>Acesse o Meu TIM</h2><p>Área demonstrativa — não informe dados reais.</p><label>Número TIM<input placeholder="(92) 99999-9999" inputmode="tel"></label><button class="button primary wide" data-close>Entrar na demonstração</button></section></div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
